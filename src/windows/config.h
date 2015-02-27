@@ -19,10 +19,11 @@
    "config.h" before anything else. */
 #ifndef GFLAGS_DLL_DECL
 # define GFLAGS_IS_A_DLL  1   /* not set if you're statically linking */
-# define GFLAGS_DLL_DECL  __declspec(dllexport)
+//# define GFLAGS_DLL_DECL /* __declspec(dllexport)*/
 # define GFLAGS_DLL_DECL_FOR_UNITTESTS  __declspec(dllimport)
 #endif
 
+#define GFLAGS_DLL_DECL
 /* Namespace for Google classes */
 #define GOOGLE_NAMESPACE  ::google
 

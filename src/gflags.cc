@@ -1912,7 +1912,7 @@ static uint32 ParseCommandLineFlagsInternal(int* argc, char*** argv,
   return r;
 }
 
-uint32 ParseCommandLineFlags(int* argc, char*** argv, bool remove_flags) {
+/*GFLAGS_DLL_DECL*/ uint32 ParseCommandLineFlags(int* argc, char*** argv, bool remove_flags) {
   return ParseCommandLineFlagsInternal(argc, argv, remove_flags, true);
 }
 
